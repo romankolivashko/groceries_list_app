@@ -1,10 +1,3 @@
-// $(document).ready(function() {
-//   $(".content").click(function() {
-//     $(".card-showing").toggle();
-//     $(".card-hidden").toggle();
-//   });
-// });
-
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
@@ -19,8 +12,11 @@ $(document).ready(function() {
         $("input#item6").val()
     ];
 
+    shopArr.sort();
+    shopArrCap = shopArr.map(item => item.toUpperCase());
+
     let i = 1;
-    shopArr.forEach(elem => {
+    shopArrCap.forEach(elem => {
       $(".item" + i).append(elem);
       i++;
     });
