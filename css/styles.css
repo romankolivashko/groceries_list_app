@@ -6,5 +6,17 @@
 } */
 
 .btn {
-  margin: 7px;
+  margin-top: 27px;
+}
+
+.card-showing {
+  display: block;
+}
+
+#story {
+  display: none;
+}
+
+h1 {
+  margin-top: 2rem;
 }

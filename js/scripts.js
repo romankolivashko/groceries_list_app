@@ -8,11 +8,20 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    const madArr = [$("input#person1").val(), $("input#person2").val(), $("input#animal").val(), $("input#exclamation").val(), $("input#verb").val(), $("input#noun").val()];
+    $(".card-showing").hide();
+    // $(".card-hidden").show();
+    const shopArr = [
+        $("input#item1").val(), 
+        $("input#item2").val(), 
+        $("input#item3").val(), 
+        $("input#item4").val(), 
+        $("input#item5").val(), 
+        $("input#item6").val()
+    ];
 
     let i = 1;
-    madArr.forEach(elem => {
-      $(".filler" + i).append(elem);
+    shopArr.forEach(elem => {
+      $(".item" + i).append(elem);
       i++;
     });
 
