@@ -1,6 +1,6 @@
-# _{Application Name}_
+# _Groceries App_
 
-#### _{Brief description of application}_
+#### _This application is intended to keep track of groceries needed to buy_
 
 #### By _**Roman Kolivashko**_
 
